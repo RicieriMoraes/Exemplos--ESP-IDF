@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "Ricieri Moraes",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -28.8,
+      "left": 33.64,
+      "attrs": { "builder": "esp-idf" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -10.9, "left": -134.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -10.9, "left": 211, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 167.15,
+      "left": -67.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 205.55,
+      "left": 67.2,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:4", "pot2:SIG", "green", [ "h0" ] ],
+    [ "pot1:SIG", "esp:32", "green", [ "v28.8", "h114.8", "v-28.8" ] ],
+    [ "esp:5V", "r1:2", "red", [ "h0" ] ],
+    [ "r1:1", "pot1:VCC", "red", [ "v0", "h-19.2" ] ],
+    [ "r2:1", "esp:5V", "red", [ "v0", "h-28.8" ] ],
+    [ "r2:2", "pot2:VCC", "red", [ "v0", "h133.2" ] ],
+    [ "pot2:GND", "esp:GND.3", "black", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
