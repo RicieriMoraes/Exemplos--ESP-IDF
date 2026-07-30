@@ -34,6 +34,6 @@ void app_main(void)
         gpio_set_level(PIN, status);
 
         // Define delay dividido pelo ciclo de máquina em milissegundos
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Tempo em que o core estará executando outra task
     }
 }

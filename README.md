@@ -106,7 +106,7 @@ Para executar os exemplos recomenda-se:
 
 ## Simulação
 
-Grande parte dos exemplos pode ser executada visualmente diretamente utilizando o **Wokwi Simulator**.
+Grande parte dos exemplos pode ser executada visualmente utilizando o **Wokwi Simulator**.
 
 Para isso é necessário:
 
@@ -139,18 +139,6 @@ Esse padrão facilita a manutenção do repositório e a consulta rápida dos ex
 
 ---
 
-## Plataforma utilizada
-
-| Item | Modelo |
-|------|---------|
-| Família | ESP32 |
-| Framework | ESP-IDF |
-| Linguagem | C |
-| IDE | Visual Studio Code |
-| Simulação | Wokwi Simulator |
-
----
-
 ## Contribuições
 
 Sugestões, melhorias e correções são sempre bem-vindas.
@@ -163,7 +151,7 @@ Caso encontre algum problema ou queira sugerir novos exemplos, fique à vontade 
 
 **Ricieri Juan**
 
-Engenharia Elétrica • Sistemas Embarcados • ESP32 • ESP-IDF
+Engenharia Elétrica • P&D • Sistemas Embarcados • Projetos Elétricos • Perícias Técnicas
 
 ---
 
