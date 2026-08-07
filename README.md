@@ -53,7 +53,13 @@ Atualmente, todos os exemplos básicos encontram-se na pasta **BASE**, enquanto 
 
 ### FreeRTOS
 
-Categoria criada para armazenar exemplos relacionados ao sistema operacional de tempo real (RTOS).
+| Projeto | Descrição |
+|---------|-----------|
+| Tasks | Criação e execução de múltiplas Tasks utilizando o FreeRTOS. |
+| Core | Criação de Tasks com afinidade de núcleo utilizando `xTaskCreatePinnedToCore()`. |
+| Notification | Comunicação entre Tasks utilizando Task Notifications como contador de eventos (`xTaskNotifyGive()` e `ulTaskNotifyTake()`). |
+| Notification-Maquina-Estado | Comunicação entre Tasks utilizando Task Notifications com envio de valores e manipulação de bits para implementação de máquinas de estados (`xTaskNotify()` e `xTaskNotifyWait()`). |
+| Mutex | Criação e definição de mutex para controle de acesso e liberação de recurso (ex: monitor serial). |
 
 *Em desenvolvimento.*
 
@@ -66,16 +72,23 @@ Exemplos--ESP-IDF/
 │
 ├── BASE/
 │   ├── ADC/
+│   ├── Blink/
+│   ├── DAC/
+│   ├── Delays/
 │   ├── Entrada-Digital/
-│   ├── GPIO-Blink/
 │   ├── LOGs/
 │   ├── MemoryView/
-│   ├── PWM/
-│   └── ...
+│   └── PWM/
 │
 ├── FreeRTOS/
-│   └── (em desenvolvimento)
+│   ├── Core/
+│   ├── Mutex/
+│   ├── Notification/
+│   ├── Notification-Maquina-Estado/
+│   ├── Tasks/
+│   └── *em desenvolvimento.*
 │
+├── .vscode/
 ├── .git/
 ├── .gitattributes
 └── README.md
