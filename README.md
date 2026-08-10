@@ -60,6 +60,9 @@ Atualmente, todos os exemplos básicos encontram-se na pasta **BASE**, enquanto 
 | Notification | Comunicação entre Tasks utilizando Task Notifications como contador de eventos (`xTaskNotifyGive()` e `ulTaskNotifyTake()`). |
 | Notification-Maquina-Estado | Comunicação entre Tasks utilizando Task Notifications com envio de valores e manipulação de bits para implementação de máquinas de estados (`xTaskNotify()` e `xTaskNotifyWait()`). |
 | Mutex | Criação e definição de mutex para controle de acesso e liberação de recurso (ex: monitor serial). |
+| Semaphore | Sincronização entre Tasks utilizando Semáforo Binário (`xSemaphoreGive()` e `xSemaphoreTake()`). |
+| Queue | Comunicação e transferência de dados entre Tasks utilizando filas FIFO (`xQueueSend()` e `xQueueReceive()`). |
+| Interrupção-Externa | Tratamento de interrupções externas por GPIO com envio de eventos de uma ISR para uma Task através de Queue (`xQueueSendFromISR()`). |
 
 *Em desenvolvimento.*
 
@@ -82,9 +85,12 @@ Exemplos--ESP-IDF/
 │
 ├── FreeRTOS/
 │   ├── Core/
+│   ├── Interrupcao-Externa/
 │   ├── Mutex/
 │   ├── Notification/
 │   ├── Notification-Maquina-Estado/
+│   ├── Queue/
+│   ├── Semaphore/
 │   ├── Tasks/
 │   └── *em desenvolvimento.*
 │
