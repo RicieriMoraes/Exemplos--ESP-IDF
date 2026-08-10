@@ -1,3 +1,10 @@
+/*
+ * NOME: Ricieri Juan
+ * DATA: 30/07/2026
+ * PROJETO: Notification
+ * VERSÃO: 1.0.0
+*/
+
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
