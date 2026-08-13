@@ -63,6 +63,7 @@ Atualmente, todos os exemplos básicos encontram-se na pasta **BASE**, enquanto 
 | Semaphore | Sincronização entre Tasks utilizando Semáforo Binário (`xSemaphoreGive()` e `xSemaphoreTake()`). |
 | Queue | Comunicação e transferência de dados entre Tasks utilizando filas FIFO (`xQueueSend()` e `xQueueReceive()`). |
 | Interrupção-Externa | Tratamento de interrupções externas por GPIO com envio de eventos de uma ISR para uma Task através de Queue (`xQueueSendFromISR()`). |
+| Event-Group | Envio de notificações/sinalizações agrupadas para geração de evento. |
 
 *Em desenvolvimento.*
 
@@ -85,6 +86,7 @@ Exemplos--ESP-IDF/
 │
 ├── FreeRTOS/
 │   ├── Core/
+│   ├── Event-Group/
 │   ├── Interrupcao-Externa/
 │   ├── Mutex/
 │   ├── Notification/
