@@ -64,6 +64,7 @@ Atualmente, todos os exemplos básicos encontram-se na pasta **BASE**, enquanto 
 | Queue | Comunicação e transferência de dados entre Tasks utilizando filas FIFO (`xQueueSend()` e `xQueueReceive()`). |
 | Interrupção-Externa | Tratamento de interrupções externas por GPIO com envio de eventos de uma ISR para uma Task através de Queue (`xQueueSendFromISR()`). |
 | Event-Group | Envio de notificações/sinalizações agrupadas para geração de evento. |
+| Custom-Config | Customizações de configurações e periféricos para seleção e controle via menuconfig. |
 
 *Em desenvolvimento.*
 
@@ -86,6 +87,7 @@ Exemplos--ESP-IDF/
 │
 ├── FreeRTOS/
 │   ├── Core/
+│   ├── Custom-Config/
 │   ├── Event-Group/
 │   ├── Interrupcao-Externa/
 │   ├── Mutex/
