@@ -65,8 +65,8 @@ Atualmente, todos os exemplos básicos encontram-se na pasta **BASE**, enquanto 
 | Interrupção-Externa | Tratamento de interrupções externas por GPIO com envio de eventos de uma ISR para uma Task através de Queue (`xQueueSendFromISR()`). |
 | Event-Group | Envio de notificações/sinalizações agrupadas para geração de evento. |
 | Custom-Config | Customizações de configurações e periféricos para seleção e controle via menuconfig. |
-
-*Em desenvolvimento.*
+| Timer | Criação e controle de Software Timer do FreeRTOS para execução temporizada de funções de callback (`xTimerCreate()` e `xTimerStart()`). |
+| High-Resolution-Timer | Criação e controle de timer periódico de alta resolução em microssegundos utilizando `esp_timer`, com execução de callback e controle de GPIO. |
 
 ---
 
@@ -89,6 +89,7 @@ Exemplos--ESP-IDF/
 │   ├── Core/
 │   ├── Custom-Config/
 │   ├── Event-Group/
+│   ├── High-Timer-Resolution/
 │   ├── Interrupcao-Externa/
 │   ├── Mutex/
 │   ├── Notification/
@@ -96,6 +97,7 @@ Exemplos--ESP-IDF/
 │   ├── Queue/
 │   ├── Semaphore/
 │   ├── Tasks/
+│   ├── Timer/
 │   └── *em desenvolvimento.*
 │
 ├── .vscode/
